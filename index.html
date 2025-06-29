@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GameHub</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f0f0f0; }
+    header { background: #222; color: white; padding: 1rem; text-align: center; }
+    .container { padding: 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+    iframe { width: 100%; height: 400px; border: none; border-radius: 10px; }
+    .game-card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 GameHub</h1>
+  </header>
+  <div class="container">
+    <div class="game-card">
+      <h2>2048</h2>
+      <iframe src="https://play2048.co/"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>T-Rex Runner</h2>
+      <iframe src="https://offline-dino-game.firebaseapp.com/"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>HexGL</h2>
+      <iframe src="https://hexgl.bkcore.com/play/"></iframe>
+    </div>
+    <div class="game-card">
+      <h2>NES Emulator</h2>
+      <iframe src="https://nesemu.now.sh/"></iframe>
+    </div>
+  </div>
+</body>
+</html>
